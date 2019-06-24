@@ -1,0 +1,16 @@
+html,
+body {
+	min-height: 100%;
+}
+
+body {
+	position: relative;
+}
+
+main {
+	padding-top: $navbar-height;
+}
+
+.website-section {
+	padding: 60px 0;
+}

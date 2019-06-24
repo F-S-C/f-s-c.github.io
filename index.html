@@ -1,0 +1,50 @@
+---
+layout: home
+title: FSC
+---
+
+<section id="about" class="website-section row justify-content-center">
+    <div class="col-lg-8">
+        <header class="section-header">
+            <h1>About Us</h1>
+            <p>Get insights on who we are.</p>
+        </header>
+
+        <section>
+            <p>This team was born in 2018 to take a group exam and it's made of five
+                collegues and <em>friends</em> that saw in that exam the oportunity to start working
+                together as a real group. Now we are ready to take any challenge and give life
+                to our ideas.</p>
+
+            <p><em>"FSC"</em> stands for <em>"Five Students of Computer Science"</em>: we are five
+                Bachelor's Students of Computer Science and Digital Communication at the
+                University of Bari "Aldo Moro".</p>
+            <p>The team is composed by:</p>
+            <ul>
+                <li>Alessandro <em>Annese</em></li>
+                <li>Davide <em>De Salvo</em></li>
+                <li>Andrea <em>Esposito</em></li>
+                <li>Graziano <em>Montanaro</em></li>
+                <li>Regina <em>Zaccaria</em></li>
+            </ul>
+        </section>
+    </div>
+</section>
+<section id="projects" class="website-section row justify-content-center">
+    <div class="col-lg-8">
+        <header class="section-header">
+            <h1>Our Projects</h1>
+            <p>This is a list of our projects.</p>
+        </header>
+
+        <section>
+            <p>Here is a list of all of our public repositories (excluding the repository
+                from which this site is generated).</p>
+            <ul>
+                {% for repository in site.data.projects %}
+                <li><a href="{{ repository.url }}" target="_blank">{{ repository.name }}</a>: {{ repository.description }}</li>
+                {% endfor %}
+            </ul>
+        </section>
+    </div>
+</section>
