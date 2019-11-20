@@ -24,7 +24,7 @@ url: "https://f-s-c.github.io/" # the base hostname & protocol for your site, e.
 # twitter_username: jekyllrb
 github_username:  F-S-C
 
-github: [metadata]
+# github: [metadata]
 repository: F-S-C/F-S-C.github.io
 
 # Build settings
@@ -36,7 +36,7 @@ sass:
 
 plugins:
   - jekyll-feed
-  - "jekyll-github-metadata"
+  - jekyll-github-metadata
 
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
