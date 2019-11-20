@@ -1,0 +1,7 @@
+@mixin gradient($direction, $color-stops...) {
+	background: nth(nth($color-stops, 1), 1);
+	background: -webkit-linear-gradient($direction, $color-stops);
+	background: -moz-linear-gradient($direction, $color-stops);
+	background: -o-linear-gradient($direction, $color-stops);
+	background: linear-gradient($direction, $color-stops);
+}

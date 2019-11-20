@@ -41,8 +41,10 @@ title: FSC
             <p>Here is a list of all of our public repositories (excluding the repository
                 from which this site is generated).</p>
             <ul>
-                {% for repository in site.data.projects %}
-                <li><a href="{{ repository.url }}" target="_blank">{{ repository.name }}</a>: {{ repository.description }}</li>
+                {% for repository in site.github.public_repositories %}
+                    {% if repository.name != "F-S-C.github.io"%}
+                        <li><a href="{{ repository.html_url }}" target="_blank">{{ repository.name }}</a>: {{ repository.description }}</li>
+                    {% endif %}
                 {% endfor %}
             </ul>
         </section>
