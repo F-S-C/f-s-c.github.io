@@ -37,6 +37,7 @@ sass:
 plugins:
   - jekyll-feed
   - jekyll-github-metadata
+  - jekyll-seo-tag
 
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
