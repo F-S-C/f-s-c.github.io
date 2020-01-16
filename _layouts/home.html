@@ -2,11 +2,12 @@
 layout: default
 ---
 
-<div itemscope itemtype="https://schema.org/Organization">
-    <section id="splash" class="inner cover">
-        <div class="cover-container d-flex h-100 p-3 mx-auto flex-column">
-            <h1 class="cover-heading">FSC</h1>
-            <p class="lead">Discover who we are and get some information about what we can do.</p>
+<section id="splash" class="inner cover">
+    <div class="cover-container d-flex h-100 p-3 mx-auto flex-column">
+        <h1 itemprop="name" class="cover-heading">
+            FSC &ndash; Five Students of Computer Science
+        </h1>
+        <p class="lead">Discover who we are and get some information about what we can do.</p>
         <p class="lead">
             <a href="#content" class="btn btn-lg btn-secondary">Learn more</a>
         </p>
@@ -16,4 +17,3 @@ layout: default
 <main class="container" id="content">
     {{ content }}
 </main>
-</div>

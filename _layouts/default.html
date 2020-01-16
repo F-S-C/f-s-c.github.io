@@ -13,7 +13,49 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" media="screen" href="{{ site.baseurl }}/assets/css/{{ 'style.css' | css_bust_cache }}">
 
-    <title>{{ page.title }}</title>
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "Organization",
+            "name": "FSC",
+            "url": "https://F-S-C.github.io",
+            "logo": "https://F-S-C.github.io/assets/images/logo-dark.png",
+            "legalName": "FSC -- Five Students of Computer Science",
+            "member": [
+                {
+                    "@type": "Person",
+                    "givenName": "Andrea",
+                    "familyName": "Esposito",
+                    "gender": "http://schema.org/Male",
+                    "sameAs": "https://espositoandrea.github.io"
+                },
+                {
+                    "@type": "Person",
+                    "givenName": "Alessandro",
+                    "familyName": "Annese",
+                    "gender": "http://schema.org/Male"
+                },
+                {
+                    "@type": "Person",
+                    "givenName": "Davide",
+                    "familyName": "De Salvo",
+                    "gender": "http://schema.org/Male"
+                },
+                {
+                    "@type": "Person",
+                    "givenName": "Graziano",
+                    "familyName": "Montanaro",
+                    "gender": "http://schema.org/Male"
+                },
+                {
+                    "@type": "Person",
+                    "givenName": "Regina",
+                    "familyName": "Zaccaria",
+                    "gender": "http://schema.org/Female"
+                }
+            ]
+        }
+    </script>
 </head>
 
 <body data-spy="scroll" data-target="#mainNavbarContainer" data-offset="200">
